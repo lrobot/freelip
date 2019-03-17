@@ -1,0 +1,41 @@
+FreeLIP is the large integer package used in the global collaboration to
+factor the 129-digit number RSA-129 and thereby solve a 17-year old
+challenge in cryptography.
+
+This software was originally written by Arjen K Lenstra
+(arjen.lenstra@citicorp.com) but is now maintained by Paul Leyland
+(pcl@oucs.ox.ac.uk).  Bug reports, ports to novel architectures,
+enhancements, suggestions, etc should be directed to pcl.
+
+This package may be copied, redistributed and used for any
+NON-COMMERCIAL purpose but the copyright notices must remain intact.
+Neither Citicorp, Oxford University nor any of the authors offer any
+warranty whatsoever.
+
+The V1.1 release of freeLIP is adapted from the RSA-129 package -- a few
+minor bug fixes have been incorporated by Paul Leyland, and it has been
+ported to DEC Alpha and Microsoft WinNT. The package consists of this
+README, the source code lip.c and lip.h; full PostScript documentation,
+a configuration utility liptimer.c and a wish-list of desirable
+enhancements called TODO.
+
+Differences from V1.0
+---------------------
+
+There have been no major changes.
+
+A nasty bug in zxxeucl has been fixed; previously zfecm() etc could
+return incorrect answers, loop endlessly, or crash with a memory error.
+
+zsqufof() now works correctly (or, at least, better) on 64-bit machines.
+
+Sundry memory leaks have been plugged.
+
+The code now compiles better under Windows NT.  Several internal
+variables had to be renamed to avoid clashes.  None are user-visible.
+
+The Makefile is marginally (though only marginally) less primitive.
+
+
+Paul Leyland  -- 21 July 1997
+

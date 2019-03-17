@@ -1,0 +1,12 @@
+The wish-list:
+
+    Write assembler primitives for common architectures
+
+    Split up into multiple modules and make an ar(1) library
+
+    Write a timer to select optimum compilation constants automagically
+
+    Fix minor bug in output routines where the first line is wrong length
+
+    Make some #defines visible (transfer from lip.c to lip.h)
+
